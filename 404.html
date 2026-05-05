@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Clarity Wealth</title>
+  <script>
+    // GitHub Pages SPA redirect: preserve path for client-side router
+    var base = '/clarity_wealth';
+    var path = location.pathname.slice(base.length);
+    var query = location.search;
+    var hash = location.hash;
+    sessionStorage.setItem('spa-redirect', path + query + hash);
+    location.replace(base + '/');
+  </script>
+</head>
+<body></body>
+</html>

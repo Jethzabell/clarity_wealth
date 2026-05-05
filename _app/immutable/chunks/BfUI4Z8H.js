@@ -1,0 +1,1 @@
+const E={WEEKLY:4.333333333333333,BIWEEKLY:2.1666666666666665,MONTHLY:1,QUARTERLY:.3333333333333333,SEMIANNUAL:.16666666666666666,ANNUAL:.08333333333333333,ONE_TIME:0};function o(n,t){const r=E[t];return r===void 0?0:u(n*r)}function i(n,t){return t==="ONE_TIME"?u(n):o(n,t)}function u(n){return Math.round(n*100)/100}export{i as a,o as m,u as r};
